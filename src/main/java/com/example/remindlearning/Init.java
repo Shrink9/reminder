@@ -21,7 +21,7 @@ public class Init{
                                       //设置触发器名字和组名
                                       //使用CronSchedule设置时间间隔,重复次数为无数次. 下面是Cron表达式
                                       //每周3,5,7
-                                      .withSchedule(CronScheduleBuilder.cronSchedule("0 0 20 ? * 3,5,7"))
+                                      .withSchedule(CronScheduleBuilder.cronSchedule("0 0 20 ? * 4,6,1"))
                                       .build();
         //绑定定时任务1和触发器1(按照设定执行)
         scheduler.scheduleJob(jobDetail1,trigger1);
