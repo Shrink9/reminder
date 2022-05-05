@@ -14,6 +14,7 @@ public class Init{
     private Scheduler scheduler;
     @PostConstruct
     public void addJob() throws SchedulerException{
+        //
         //构造JobDetail,核心是任务,其他的可以不设置.
         JobDetail jobDetail1=JobBuilder.newJob(RemindJob.class)
                                       .build();
