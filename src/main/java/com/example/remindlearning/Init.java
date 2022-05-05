@@ -28,6 +28,7 @@ public class Init{
                                        //每周3,5,7
                                        .withSchedule(CronScheduleBuilder.cronSchedule("0 0 20 ? * 4,6,1"))
                                        .build();
+        System.out.println("0");
         //绑定定时任务1和触发器1(按照设定执行)
         scheduler.scheduleJob(jobDetail1,trigger1);
         //构造下面要用的startTime
