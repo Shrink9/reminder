@@ -1,0 +1,36 @@
+server:
+  port: 8080
+spring:
+  mvc:
+    #只对反序列化生效(也就是其他服务或者前端给本服务传递JSON时生效)
+    date-format: yyyy-MM-dd HH:mm:ss
+  quartz:
+    #Quartz相关数据存储类型
+    job-store-type: jdbc
+    jdbc:
+      #启动时初始化数据库策略(运行sql文件)
+      initialize-schema: always
+  profiles:
+    active: dev
+wechat-pay:
+  #商户id
+  merchant-id: 1558950191
+  #公众号appid(和商户id绑定过)
+  appid: wx74862e0dfcf69954
+  #商户证书序列号
+  merchant-serial-number: 34345964330B66427E0D3D28826C4993C77E631F
+  #商户私钥文件
+  private-key-path: src/main/resources/apiclient_key.pem
+  #APIv3密钥(对称加密密钥)
+  api-v3-key: UDuLFDcmy5Eb6o0nTNZdu6ek4DDh4K8B
+  #微信服务器地址
+  domain: https://api.mch.weixin.qq.com
+mybatis-plus:
+  global-config:
+    db-config:
+      update-strategy: not_empty
+      insert-strategy: not_empty
+logging:
+  level:
+    com.example.remindlearning: debug
+
