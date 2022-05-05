@@ -11,9 +11,9 @@ spring:
     protocol: smtp
     # 编码集
     default-encoding: UTF-8
-    #发送邮件的账户
-    username: 1928142285@qq.com
-    #授权码
+    #发送邮件的账户(使用时记得改成正确的)
+    username: *****
+    #授权码(使用时记得改成正确的)
     password: *****
     test-connection: true
     properties:
