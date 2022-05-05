@@ -27,4 +27,4 @@ spring:
             required: true
 wechat-pay:
   #接收结果通知地址
-  notify-url: https://shrink.fun:8080
+  notify-url: http://shrink.fun:8080

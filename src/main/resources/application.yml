@@ -33,4 +33,3 @@ mybatis-plus:
 logging:
   level:
     com.example.remindlearning: debug
-
